@@ -119,3 +119,18 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Django will output all emails to the shell.This is very useful for testing your application without SMTP server
+# to check do the below
+# from django.core.mail import send_mail
+# send_mail('Django mail','This e-mail was sent with Django.','gayathri1858@yahoo.com', ['kanagara@msu.edu'], fail_silently=False)
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+# Using gmail server use the below code
+#
+# EMAIL_HOST = 'smtp.gmail.com'
+# EMAIL_HOST_USER = 'your_account@gmail.com'
+# EMAIL_HOST_PASSWORD = "Your_password"
+# EMAIL_PORT = 587
+# EMAIL_USE_TLS = True
