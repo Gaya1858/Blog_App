@@ -21,7 +21,15 @@
         * created post folder in templates and created views for list.html and details.html using django framework template tags
         *  Created blog/templates/pagination.html for paging the view of the application
     - for styling, created static folder in blog and static/css/blog.css
-4. Files created and updated
+4. Working with QuerySets and Managers
+
+   - Creating objects
+   - Updating objects
+   - retrieving objects
+   - deleting objects
+   - creating model managers
+
+5. Files created and updated
     * mysite/setting.py
     * mysite/urls.py
     * mysite/blog/admin.py
